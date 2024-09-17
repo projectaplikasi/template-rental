@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Kontak</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white-400 text-black">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <div class="flex">
+            <div class="w-1/4 bg-blue-600 text-white h-screen p-4">
+            <h2 class="text-xl font-bold mb-4">Admin AmpuStudio</h2>
+            <ul>
+                <li class="mb-2"><a href="datakontak.html" class="block p-2 bg-blue-700 rounded">Data Kontak</a></li>
+                <li class="mb-2"><a href="tambahkontak.html" class="block p-2 bg-blue-700 rounded">Tambah Kontak</a></li>
+                <li class="mb-2"><a href="editkontak.html" class="block p-2 bg-blue-700 rounded">Edit Kontak</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-8">
+            <div class="flex justify-between items-center mb-4">
+                <h1 class="text-2xl font-bold">Data Kontak</h1>
+                <a href="tambahkontak.html" class="bg-purple-600 text-white py-2 px-4 rounded">Tambah</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="mb-4">
+                <input type="text" placeholder="Search" class="w-full p-2 border border-gray-500 rounded">
+            </div>
+
+            <!-- Product Table -->
+            <div class="overflow-x-auto">
+                <table class="min-w-full border-b-slate-300 text-left">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">WhatsApp</th>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">Email</th>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">Instagram</th>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">Tiktok</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example Row -->
+                        <tr>
+                            <td class="py-2 px-4 border-b border-gray-600">0009876</td>
+                            <td class="py-2 px-4 border-b border-gray-600">ampust@gmail.com</td>
+                            <td class="py-2 px-4 border-b border-gray-600">amikompurwokerto_</td>
+                            <td class="py-2 px-4 border-b border-gray-600">amikompwt</td>
+                            <td class="py-2 px-4 border-b border-gray-600">
+                                <div class="flex space-x-4 items-center justify-center">
+                                    
+                                    <a href="" data-confirm-edit="true">
+                                        <button class="bg-green-500 text-white py-2 px-4 rounded">Edit</button>
+                                    </a>
+                                
+                                    <a href="" data-confirm-delete="true">
+                                        <button class="bg-red-500 text-white py-2 px-4 rounded">Delete</button>
+                                        </a>
+                                </div>
+                                  
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

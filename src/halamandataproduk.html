@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Data Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white-400 text-black">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <div class="flex">
+            <div class="w-1/4 bg-blue-600 text-white h-screen p-4">
+            <h2 class="text-xl font-bold mb-4">Admin AmpuStudio</h2>
+            <ul>
+                <li class="mb-2"><a href="halamanadmin.html" class="block p-2 bg-blue-700 rounded">Data Penjualan</a></li>
+                <li class="mb-2"><a href="halamandataproduk.html" class="block p-2 bg-blue-700 rounded">Data Produk</a></li>
+                <li class="mb-2"><a href="kontakedit.html" class="block p-2 bg-blue-700 rounded">Kontak Edit</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-8">
+            <div class="flex justify-between items-center mb-4">
+                <h1 class="text-2xl font-bold">Data Produk</h1>
+                <a href="tambahproduk.html" class="bg-purple-600 text-white py-2 px-4 rounded">Tambah Produk</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="mb-4">
+                <input type="text" placeholder="Search" class="w-full p-2 border border-gray-500 rounded">
+            </div>
+
+            <!-- Product Table -->
+            <div class="overflow-x-auto">
+                <table class="min-w-full border-b-slate-300 text-left">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">Nama Produk</th>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">Kode Produk</th>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">Spesifikasi</th>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">Stok</th>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">Harga</th>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">Merk</th>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">Deskripsi</th>
+                            <th class="py-2 px-4 border-b  border-b-slate-300">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example Row -->
+                        <tr>
+                            <td class="py-2 px-4 border-b border-gray-600">Produk A</td>
+                            <td class="py-2 px-4 border-b border-gray-600">001</td>
+                            <td class="py-2 px-4 border-b border-gray-600">Spesifikasi A</td>
+                            <td class="py-2 px-4 border-b border-gray-600">100</td>
+                            <td class="py-2 px-4 border-b border-gray-600">Rp. 100.000</td>
+                            <td class="py-2 px-4 border-b border-gray-600">High</td>
+                            <td class="py-2 px-4 border-b border-gray-600">Deskripsi A</td>
+                            <td class="py-2 px-4 border-b border-gray-600">
+                                <div class="flex space-x-4 items-center justify-center">
+                                    <a href="" data-confirm-detail="true">
+                                        <button class="bg-blue-500 text-white py-2 px-4 rounded">Detail</button>
+                                    </a>
+                                    
+                                    <a href="" data-confirm-edit="true">
+                                        <button class="bg-green-500 text-white py-2 px-4 rounded">Edit</button>
+                                    </a>
+                                
+                                    <a href="" data-confirm-delete="true">
+                                        <button class="bg-red-500 text-white py-2 px-4 rounded">Delete</button>
+                                        </a>
+                                </div>
+                                  
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
